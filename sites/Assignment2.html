@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atlantas Creole Plant Based Cooking</title>
-    <script src="./js/jquery-3.3.1.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/ajax-utils2.js"></script>
-    <script src="./js/Assignment2script.js"></script>
+    <title>Atlanta Creole Plant Based Cooking</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./Assignment2.css">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
@@ -35,15 +31,21 @@
              
             <div id="collapsable-nav" class="collapse navbar-collapse">
                 <ul id="nav-list" class="nav navbar-nav navbar-right">
+                    <li id="#navHomeButton" class="visible-xs active">
+                        <a href="Assignment2.html">
+                            <span class="glyphicon glyphicon-home"></span>
+                            Home
+                        </a>
+                    </li>
                     <li>
                         <a href="#">
                             <span class="glyphicon glyphicon-info-sign"></span><br
                             class="hidden-xs">About</a>
                     </li>
-                    <li>
-                        <a href="recipes-categories.html">
+                    <li id="navMenuButton">
+                        <a href="#" onclick="$dc.loadMenuCategories();">
                             <span class="glyphicon glyphicon-cutlery"></span><br
-                            class="hidden-xs">Recipes</a>
+                            class="hidden-xs">Menu</a>
                     </li>
                     <li>
                         <a href="#">
@@ -72,38 +74,14 @@
           678-111-2222</a>
   </div>
 
-  <div id="main-content" class="container">
-    <div class="jumbotron">
-        <img src="../images/Redbean.PNG" alt="Picture of Chef" class="img-responsive visible-xs">
-    </div>
-    
-    <div id="home-tiles" class="row">
-        <div class="col-md-4 col-sm-6 col-xs-12">
-            <a href="#" onclick="$dc.loadMenuCategories();">
-                <div id="recipes-tile"><span>Recipes</span></div></a>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-            <a href="#" onclick="$dc.loadMenuItems('SP')">
-                <div id="videos-tile"><span>Videos</span></div></a>
-        </div>
-        <div class="col-md-4 col-sm-12 col-xs-12">
-            <a href="https://goo.gl/maps/rvf7RFikVCrmcQMR9" target="_blank">
-                <div id="map-tile">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.239065134812!2d-84.37417758479275!3d33.75448768068802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f503084ca5889d%3A0xf8151ea1c96dfb87!2sSluttyVegan%20ATL!5e0!3m2!1sen!2sus!4v1639997471424!5m2!1sen!2sus" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    <span>map</span>
-                </div>
-            </a>
-        </div>
-    </div>   
-
-  </div>
+  <div id="main-content" class="container"></div>
 
  <footer class="panel-footer">
      <div class="container">
         <div class="row">
             <section id="hours" class="col-sm-4">
                 <span>Hours:</span><br>
-                Every Saturday: 12pm ET
+                Weekdays: 12pm - 9pm ET
                 <hr class="visible-xs">
             </section>
             <section id="follow" class="col-sm-4">
@@ -112,15 +90,19 @@
                 <hr class="visible-xs">
             </section>
             <section id="testimonial" class="col-sm-4">
-                <p>"Atlanta Creole has changed my outlook on Plant-Based food and I love it!"</p>
-                <p>"My way of living has improved drastically after fallowing Atlanta Creole's Plant-Based Recipes."</p>
+                <p>"Very Delicious Food!"</p>
+                <p>"My favorite place to eat! Every weekend I have made it a tradition, at this point!"</p>
             </section>
         </div>
      </div>
  </footer>
 
 
- 
 
+ <script src="./js/jquery-3.3.1.min.js"></script>
+ <script src="./js/bootstrap.min.js"></script>
+ <script src="./js/ajax-utils2.js"></script>
+ <script src="./js/assignment2bscript.js"></script>
+ <!-- <script src="./js/assignment2script.js"></script> !-->
 </body>
 </html>
