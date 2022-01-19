@@ -1,15 +1,16 @@
 <div class="jumbotron">
-    <img src="../images/Redbean.PNG" alt="Picture of Chef" class="img-responsive visible-xs">
+    <img src="./images/Redbean.PNG" alt="Picture of Chef" class="img-responsive visible-xs">
 </div>
 
 <div id="home-tiles" class="row">
     <div class="col-md-4 col-sm-6 col-xs-12">
         <a href="#" onclick="$dc.loadMenuCategories();">
-            <div id="recipes-tile"><span>Recipes</span></div></a>
+            <div id="recipes-tile"><span>Menu</span></div></a>
     </div>
     <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="#" onclick="$dc.loadMenuItems('SP')">
-            <div id="videos-tile"><span>Videos</span></div></a>
+              <a href="#" onclick="$dc.loadMenuItems('{{randomCategoryShortName}}');">
+       <!---- <a href="#" onclick="$dc.loadMenuItems('SP')"> !-->
+            <div id="videos-tile"><span>Specials</span></div></a>
     </div>
     <div class="col-md-4 col-sm-12 col-xs-12">
         <a href="https://goo.gl/maps/rvf7RFikVCrmcQMR9" target="_blank">

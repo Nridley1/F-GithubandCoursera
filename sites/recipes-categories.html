@@ -31,9 +31,10 @@
              
             <div id="collapsable-nav" class="collapse navbar-collapse">
                 <ul id="nav-list" class="nav navbar-nav navbar-right">
-                    <li class="visible-xs">
+                    <li>
                         <a href="Assignment2.html">
-                            <span class="glyphicon glyphicon-home"></span>Home
+                            <span class="glyphicon glyphicon-home"></span>
+                            Home
                         </a>
                     </li>
                     <li>
@@ -41,10 +42,10 @@
                             <span class="glyphicon glyphicon-info-sign"></span><br
                             class="hidden-xs">About</a>
                     </li>
-                    <li class="active">
-                        <a href="recipes-categories.html">
+                    <li id="navMenuButton" class="active">
+                        <a href="#" onclick="$dc.loadMenuCategories();">
                             <span class="glyphicon glyphicon-cutlery"></span><br
-                            class="hidden-xs">Recipes</a>
+                            class="hidden-xs">Menu</a>
                     </li>
                     <li>
                         <a href="#">
@@ -73,69 +74,7 @@
           678-111-2222</a>
   </div>
 
-  <div id="main-content" class="container">
-    <h2 id="recipes-categories-tile" class="text-center">Recipe 
-        Categories</h2>
-    <div class="text-center">
-        New recipes will be posted with every new videos, every Saturday @ 12pm ET.
-    </div>
-    <section class="row">
-        <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-           <a href="single-category.html">
-               <div class="category-tile">
-                   <img width="200" height="200" src=./images/B/Redbeans.png alt="lunch">
-                   <span>Veggie Recipies</span>
-               </div>
-           </a> 
-        </div>
-        <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-            <a href="single-category.html">
-                <div class="category-tile">
-                    <img width="200" height="200" src=./images/B/Redbeans.png alt="lunch">
-                    <span>Potato Recipes</span>
-                </div>
-            </a> 
-         </div>
-         <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-            <a href="single-category.html">
-                <div class="category-tile">
-                    <img width="200" height="200" src=./images/B/Redbeans.png alt="lunch">
-                    <span>Bean Recipes</span>
-                </div>
-            </a> 
-         </div>
-         <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12" > 
-            <a href="single-category.html">
-                <div class="category-tile">
-                    <img width="200" height="200" src=./images/B/Redbeans.png alt="lunch">
-                    <span>Special Recipes</span>
-                </div>
-            </a> 
-         </div>
-         <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12" >
-            <a href="single-category.html">
-                <div class="category-tile">
-                    <img width="200" height="200" src=./images/B/Redbeans.png alt="lunch">
-                    <span>Dessert Recipes</span>
-                </div>
-            </a> 
-         </div>
-         <div class="col-md-3 col-md-4 col-xs-6 col-xxs-12">
-            <a href="single-category.html">
-                <div class="category-tile">
-                    <img width="200" height="200" src=./images/B/Redbeans.png alt="lunch">
-                    <span>Lunch</span>
-                </div>
-            </a> 
-         </div>
-
-    </section>
-
-
-
-
-
-  </div>
+  <div id="main-content" class="container"></div>
 
  <footer class="panel-footer">
      <div class="container">
